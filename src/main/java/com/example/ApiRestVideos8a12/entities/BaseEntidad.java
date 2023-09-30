@@ -1,4 +1,4 @@
-package com.utn.EjApiRestVideo8a12.entities;
+package com.example.ApiRestVideos8a12.entities;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

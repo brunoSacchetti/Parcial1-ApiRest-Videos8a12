@@ -1,8 +1,9 @@
-package com.utn.EjApiRestVideo8a12.services;
+package com.example.ApiRestVideos8a12.services;
 
-import com.utn.EjApiRestVideo8a12.entities.Autor;
-import com.utn.EjApiRestVideo8a12.repositories.AutorRepository;
-import com.utn.EjApiRestVideo8a12.repositories.BaseRepository;
+
+import com.example.ApiRestVideos8a12.entities.Autor;
+import com.example.ApiRestVideos8a12.repositories.AutorRepository;
+import com.example.ApiRestVideos8a12.repositories.BaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

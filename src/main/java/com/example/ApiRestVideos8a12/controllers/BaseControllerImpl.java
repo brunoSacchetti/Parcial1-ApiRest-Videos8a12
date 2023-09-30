@@ -1,8 +1,8 @@
-package com.utn.EjApiRestVideo8a12.controllers;
+package com.example.ApiRestVideos8a12.controllers;
 
-import com.utn.EjApiRestVideo8a12.entities.BaseEntidad;
-import com.utn.EjApiRestVideo8a12.entities.Persona;
-import com.utn.EjApiRestVideo8a12.services.BaseServiceImpl;
+
+import com.example.ApiRestVideos8a12.entities.BaseEntidad;
+import com.example.ApiRestVideos8a12.services.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

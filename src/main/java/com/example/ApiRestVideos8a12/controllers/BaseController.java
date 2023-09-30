@@ -1,6 +1,7 @@
-package com.utn.EjApiRestVideo8a12.controllers;
+package com.example.ApiRestVideos8a12.controllers;
 
-import com.utn.EjApiRestVideo8a12.entities.BaseEntidad;
+
+import com.example.ApiRestVideos8a12.entities.BaseEntidad;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;

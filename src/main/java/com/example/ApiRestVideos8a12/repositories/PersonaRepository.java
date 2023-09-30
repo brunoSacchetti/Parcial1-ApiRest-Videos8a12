@@ -1,6 +1,6 @@
-package com.utn.EjApiRestVideo8a12.repositories;
+package com.example.ApiRestVideos8a12.repositories;
 
-import com.utn.EjApiRestVideo8a12.entities.Persona;
+import com.example.ApiRestVideos8a12.entities.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

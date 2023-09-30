@@ -1,6 +1,7 @@
-package com.utn.EjApiRestVideo8a12.services;
+package com.example.ApiRestVideos8a12.services;
 
-import com.utn.EjApiRestVideo8a12.entities.BaseEntidad;
+
+import com.example.ApiRestVideos8a12.entities.BaseEntidad;
 
 import java.io.Serializable;
 import java.util.List;
