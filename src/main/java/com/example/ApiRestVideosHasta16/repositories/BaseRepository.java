@@ -1,7 +1,6 @@
-package com.example.ApiRestVideos8a12.repositories;
+package com.example.ApiRestVideosHasta16.repositories;
 
-import com.example.ApiRestVideos8a12.entities.BaseEntidad;
-import com.fasterxml.jackson.databind.ser.Serializers;
+import com.example.ApiRestVideosHasta16.entities.BaseEntidad;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 

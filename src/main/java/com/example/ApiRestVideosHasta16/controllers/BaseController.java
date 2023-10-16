@@ -1,7 +1,8 @@
-package com.example.ApiRestVideos8a12.controllers;
+package com.example.ApiRestVideosHasta16.controllers;
 
 
-import com.example.ApiRestVideos8a12.entities.BaseEntidad;
+import com.example.ApiRestVideosHasta16.entities.BaseEntidad;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,6 +12,9 @@ import java.io.Serializable;
 public interface BaseController <E extends BaseEntidad, ID extends Serializable> {
 
     public ResponseEntity<?> getAll(); //? extiende de objeto
+
+    //Metodo Pageable
+    public ResponseEntity<?> getAll(Pageable pageable);
 
     public ResponseEntity<?> getOne(@PathVariable ID id);
 

@@ -1,14 +1,14 @@
-package com.example.ApiRestVideos8a12.controllers;
+package com.example.ApiRestVideosHasta16.controllers;
 
 
-import com.example.ApiRestVideos8a12.entities.BaseEntidad;
-import com.example.ApiRestVideos8a12.services.BaseServiceImpl;
+import com.example.ApiRestVideosHasta16.entities.BaseEntidad;
+import com.example.ApiRestVideosHasta16.services.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.io.Serializable;
 
 public abstract class BaseControllerImpl<E extends BaseEntidad, S extends BaseServiceImpl<E,Long>> implements BaseController<E, Long> {
     @Autowired
@@ -22,6 +22,16 @@ public abstract class BaseControllerImpl<E extends BaseEntidad, S extends BaseSe
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"Error\":\"Error, por favor, intente mas tarde.\"}");
         }
     }
+
+    @GetMapping("/page")
+    public ResponseEntity<?> getAll(Pageable pageable){
+        try{
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAll(pageable));
+        }catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"Error\":\"Error, por favor, intente mas tarde.\"}");
+        }
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<?> getOne(@PathVariable Long id){
         try{

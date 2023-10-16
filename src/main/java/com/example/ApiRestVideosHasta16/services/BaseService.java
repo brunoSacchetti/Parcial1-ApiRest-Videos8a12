@@ -1,7 +1,9 @@
-package com.example.ApiRestVideos8a12.services;
+package com.example.ApiRestVideosHasta16.services;
 
 
-import com.example.ApiRestVideos8a12.entities.BaseEntidad;
+import com.example.ApiRestVideosHasta16.entities.BaseEntidad;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import java.io.Serializable;
 import java.util.List;
@@ -22,5 +24,8 @@ public interface BaseService<E extends BaseEntidad, ID extends Serializable> {
 
     //Metodo para eliminar un registro con un id pasado;
     public boolean delete(ID id) throws Exception;
+
+    //Metodo para utilizar paginacion
+    public Page<E> findAll(Pageable pageable) throws Exception;
 
 }

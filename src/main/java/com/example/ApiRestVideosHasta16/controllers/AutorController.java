@@ -1,8 +1,7 @@
-package com.example.ApiRestVideos8a12.controllers;
+package com.example.ApiRestVideosHasta16.controllers;
 
-import com.example.ApiRestVideos8a12.entities.Autor;
-import com.example.ApiRestVideos8a12.services.AutorServiceImpl;
-import com.fasterxml.jackson.databind.ser.Serializers;
+import com.example.ApiRestVideosHasta16.entities.Autor;
+import com.example.ApiRestVideosHasta16.services.AutorServiceImpl;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

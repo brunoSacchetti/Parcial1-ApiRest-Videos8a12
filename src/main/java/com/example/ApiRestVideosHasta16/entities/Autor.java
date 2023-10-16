@@ -1,4 +1,4 @@
-package com.example.ApiRestVideos8a12.entities;
+package com.example.ApiRestVideosHasta16.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,8 +1,10 @@
-package com.example.ApiRestVideos8a12.services;
+package com.example.ApiRestVideosHasta16.services;
 
-import com.example.ApiRestVideos8a12.entities.BaseEntidad;
-import com.example.ApiRestVideos8a12.repositories.BaseRepository;
+import com.example.ApiRestVideosHasta16.entities.BaseEntidad;
+import com.example.ApiRestVideosHasta16.repositories.BaseRepository;
 import jakarta.transaction.Transactional;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import java.io.Serializable;
 import java.util.List;
@@ -20,6 +22,17 @@ public abstract class BaseServiceImpl<E extends BaseEntidad, ID extends Serializ
     public List<E> findAll() throws Exception {
         try {
             List<E> entities = baseRepository.findAll();
+            return entities;
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    @Override
+    @Transactional
+    public Page<E> findAll(Pageable pageable) throws Exception{
+        try {
+            Page<E> entities = baseRepository.findAll(pageable);
             return entities;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
@@ -75,5 +88,7 @@ public abstract class BaseServiceImpl<E extends BaseEntidad, ID extends Serializ
             throw new Exception(e.getMessage());
         }
     }
+
+
 
 }
